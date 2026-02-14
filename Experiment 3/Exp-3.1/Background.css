@@ -1,0 +1,42 @@
+.background {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.blob {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.6;
+  animation: float 12s infinite ease-in-out;
+}
+
+.b1 {
+  background: #00c6ff;
+  top: 10%;
+  left: 15%;
+}
+
+.b2 {
+  background: #ff6ec4;
+  top: 50%;
+  left: 60%;
+  animation-delay: 4s;
+}
+
+.b3 {
+  background: #f9d423;
+  bottom: 10%;
+  left: 30%;
+  animation-delay: 8s;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-80px); }
+  100% { transform: translateY(0px); }
+}

@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  padding: 40px;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.app > * {
+  position: relative;
+  z-index: 1;
+}
